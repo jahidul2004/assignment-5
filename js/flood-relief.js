@@ -1,7 +1,7 @@
 document
-    .getElementById("flood-feni-submit")
+    .getElementById("flood-relief-submit")
     .addEventListener("click", function () {
-        const amount = parseInt(inputValueById("flood-feni-amount"));
+        const amount = parseInt(inputValueById("flood-relief-amount"));
         let remainBalance = document.getElementById("mainBalance").innerText;
         if (isNaN(amount)) {
             alert("Please input only positive number.");
@@ -14,12 +14,12 @@ document
                 alert("Insufficiant Amount");
             } else {
                 let donatedAmount = parseInt(
-                    innerValueById("flood-feni-donated")
+                    innerValueById("flood-relief-donated")
                 );
 
                 let newAmount = donatedAmount + amount;
 
-                document.getElementById("flood-feni-donated").innerText =
+                document.getElementById("flood-relief-donated").innerText =
                     newAmount;
 
                 mainBalanceReduce(amount);
@@ -32,7 +32,7 @@ document
                 let currentTime = new Date();
 
                 div.innerHTML = `
-                <h3 class="text-lg font-extrabold">${amount} Tk is donated for Donate for flood at Feni Bangladesh</h3>
+                <h3 class="text-lg font-extrabold">${amount} Tk is donated for Donate for Flood Relief in Feni,Bangladesh</h3>
                 <p class="shadow-text">${currentTime}</p>
                 `;
                 historyCont.appendChild(div);

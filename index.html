@@ -128,7 +128,10 @@
                         class="w-full h-max gap-5 flex flex-col justify-between"
                     >
                         <h1 class="btn w-max">
-                            <img src="assets/coin.png" /><span>0</span>BDT
+                            <img src="assets/coin.png" /><span
+                                id="flood-relief-donated"
+                                >0</span
+                            >BDT
                         </h1>
                         <h3 class="text-xl font-extrabold">
                             Donate for Flood Relief in Feni,Bangladesh
@@ -143,11 +146,17 @@
                             impact on the lives of those in need.
                         </p>
                         <input
+                            id="flood-relief-amount"
                             class="input input-bordered w-full"
                             type="text"
                             placeholder="write your amount"
                         />
-                        <button class="btn primary-bg w-full">Donate</button>
+                        <button
+                            id="flood-relief-submit"
+                            class="btn primary-bg w-full"
+                        >
+                            Donate
+                        </button>
                     </div>
                 </div>
                 <!-- card-2 end hrer -->
@@ -210,6 +219,7 @@
         <script src="js/script.js"></script>
         <script src="js/utilities.js"></script>
         <script src="js/flood-feni.js"></script>
+        <script src="js/flood-relief.js"></script>
         <!-- JS Linking -->
     </body>
 </html>

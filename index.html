@@ -175,7 +175,10 @@
                         class="w-full h-max gap-5 flex flex-col justify-between"
                     >
                         <h1 class="btn w-max">
-                            <img src="assets/coin.png" /><span>0</span>BDT
+                            <img src="assets/coin.png" /><span
+                                id="protest-donated"
+                                >0</span
+                            >BDT
                         </h1>
                         <h3 class="text-xl font-extrabold">
                             Aid for Injured in the Quota Movement
@@ -193,8 +196,14 @@
                             class="input input-bordered w-full"
                             type="text"
                             placeholder="write your amount"
+                            id="protest-amount"
                         />
-                        <button class="btn primary-bg w-full">Donate</button>
+                        <button
+                            id="protest-submit"
+                            class="btn primary-bg w-full"
+                        >
+                            Donate
+                        </button>
                     </div>
                 </div>
                 <!-- card-3 end hrer -->
@@ -220,6 +229,7 @@
         <script src="js/utilities.js"></script>
         <script src="js/flood-feni.js"></script>
         <script src="js/flood-relief.js"></script>
+        <script src="js/protest.js"></script>
         <!-- JS Linking -->
     </body>
 </html>

@@ -36,6 +36,8 @@ document
                 <p class="shadow-text">${currentTime}</p>
                 `;
                 historyCont.appendChild(div);
+                document.getElementById("flood-relief-amount").value = "";
+                my_modal_1.showModal();
             }
         }
     });

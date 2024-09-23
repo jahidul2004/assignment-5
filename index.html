@@ -51,7 +51,9 @@
                 </div>
                 <div>
                     <h1 class="btn">
-                        <img src="assets/coin.png" /><span>2000</span>BDT
+                        <img src="assets/coin.png" /><span id="mainBalance"
+                            >7580</span
+                        >BDT
                     </h1>
                 </div>
             </div>
@@ -66,6 +68,9 @@
 
         <!-- Main section start from here -->
         <main class="w-[90%] lg:container md:container m-auto">
+            <!-- For history section -->
+            <div id="history-container" class="hidden"></div>
+            <!-- For History section -->
             <!-- Card area section start from here -->
             <div id="card-container" class="w-full m-auto">
                 <!-- card-1 start from hrer -->
@@ -73,13 +78,16 @@
                     class="w-full h-max md:h-[350px] lg:h-[350px] flex flex-col md:flex-row lg:flex-row gap-8 my-20"
                 >
                     <div class="w-full h-full">
-                        <img class="h-full w-full" src="assets/feni.png" />
+                        <img class="h-full w-full" src="assets/noakhali.png" />
                     </div>
                     <div
                         class="w-full h-max gap-5 flex flex-col justify-between"
                     >
                         <h1 class="btn w-max">
-                            <img src="assets/coin.png" /><span>0</span>BDT
+                            <img src="assets/coin.png" /><span
+                                id="flood-feni-donated"
+                                >0</span
+                            >BDT
                         </h1>
                         <h3 class="text-xl font-extrabold">
                             Donate for flood at Feni Bangladesh
@@ -94,11 +102,17 @@
                             impact on the lives of those in need.
                         </p>
                         <input
+                            id="flood-feni-amount"
                             class="input input-bordered w-full"
                             type="text"
                             placeholder="write your amount"
                         />
-                        <button class="btn primary-bg w-full">Donate</button>
+                        <button
+                            id="flood-feni-submit"
+                            class="btn primary-bg w-full"
+                        >
+                            Donate
+                        </button>
                     </div>
                 </div>
                 <!-- card-1 end hrer -->
@@ -108,7 +122,7 @@
                     class="w-full h-max md:h-[350px] lg:h-[350px] flex flex-col md:flex-row lg:flex-row gap-8 my-20"
                 >
                     <div class="w-full h-full">
-                        <img class="h-full w-full" src="assets/noakhali.png" />
+                        <img class="h-full w-full" src="assets/feni.png" />
                     </div>
                     <div
                         class="w-full h-max gap-5 flex flex-col justify-between"
@@ -180,9 +194,22 @@
         </main>
         <!-- Main section end here -->
 
+        <!-- Modal section -->
+        <div class="modal" role="dialog" id="my_modal_8">
+            <div class="modal-box">
+                <h3 class="text-lg font-bold">Hello!</h3>
+                <p class="py-4">This modal works with anchor links</p>
+                <div class="modal-action">
+                    <a href="#" class="btn">Yay!</a>
+                </div>
+            </div>
+        </div>
+        <!-- Modal section -->
+
         <!-- JS Linking -->
         <script src="js/script.js"></script>
         <script src="js/utilities.js"></script>
+        <script src="js/flood-feni.js"></script>
         <!-- JS Linking -->
     </body>
 </html>

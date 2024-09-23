@@ -1,7 +1,7 @@
 document
     .getElementById("flood-relief-submit")
     .addEventListener("click", function () {
-        const amount = parseInt(inputValueById("flood-relief-amount"));
+        const amount = Number(inputValueById("flood-relief-amount"));
         let remainBalance = document.getElementById("mainBalance").innerText;
         if (isNaN(amount)) {
             alert("Please input only positive number.");

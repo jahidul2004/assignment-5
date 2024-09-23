@@ -1,7 +1,7 @@
 document
     .getElementById("protest-submit")
     .addEventListener("click", function () {
-        const amount = parseInt(inputValueById("protest-amount"));
+        const amount = Number(inputValueById("protest-amount"));
         let remainBalance = document.getElementById("mainBalance").innerText;
         if (isNaN(amount)) {
             alert("Please input only positive number.");
